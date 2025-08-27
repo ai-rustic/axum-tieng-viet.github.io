@@ -1,0 +1,1 @@
+# Workers an toàn & idempotent
