@@ -14,9 +14,13 @@
 - [Ch2. Kiến thức cơ bản về Rust](./chapters/ch02/README.md)
   - [Mục tiêu](./chapters/ch02/muc_tieu.md)
   - [Cài đặt Rust](./chapters/ch02/rust_installation.md)
-  - [Ownership/borrow trong async I/O](./chapters/ch02/ownership_async.md)
-  - [Lỗi & kết quả: Result, anyhow/thiserror](./chapters/ch02/error_handling.md)
-  - [Cargo: workspace, feature flags, profiles](./chapters/ch02/cargo.md)
+  - [Ownership và Borrowing](./chapters/ch02/ownership_and_borrowing.md)
+  - [Structs và Enums](./chapters/ch02/structs_and_enums.md)
+  - [Collections](./chapters/ch02/collections.md)
+  - [Pattern Matching](./chapters/ch02/matching.md)
+  - [Traits và Generics](./chapters/ch02/traits_and_generics.md)
+  - [Error Handling](./chapters/ch02/error_handling.md)
+  
 
 - [Ch3. HTTP căn bản dành cho backend Rustaceans](./chapters/ch03/README.md)
   - [Mục tiêu](./chapters/ch03/muc_tieu.md)

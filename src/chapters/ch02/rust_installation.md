@@ -30,20 +30,3 @@ rustup update
 rustup self uninstall
 ```
 
-## 5) Toolchain & targets
-
-```bash
-rustup default stable
-rustup toolchain list
-rustup target add x86_64-unknown-linux-gnu
-```
-
-## 6) Dự án mẫu
-
-```bash
-cargo new hello-rust
-cd hello-rust
-cargo run
-```
-
-
