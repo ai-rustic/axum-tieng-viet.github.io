@@ -7,6 +7,14 @@ Khi học Axum, hai khái niệm quan trọng nhất trong Rust mà bạn cần 
 ### Khái niệm
 Traits trong Rust tương tự như interfaces trong các ngôn ngữ khác. Chúng định nghĩa một tập hợp các phương thức mà một kiểu dữ liệu có thể triển khai.
 
+### Tại sao Traits và Generics quan trọng trong Axum?
+
+1. **Type Safety**: Rust's type system đảm bảo code an toàn tại compile time
+2. **Code Reusability**: Generics giúp viết code tái sử dụng cho nhiều kiểu dữ liệu
+3. **Abstraction**: Traits cho phép abstract hóa behavior mà không cần biết concrete type
+4. **Performance**: Zero-cost abstractions - không có overhead runtime
+5. **Axum's Design**: Toàn bộ Axum được xây dựng trên traits và generics
+
 ### Cú pháp cơ bản
 ```rust
 trait TenTrait {
@@ -360,21 +368,4 @@ async fn logging_middleware<B>(
     response
 }
 ```
-
-## Tại sao Traits và Generics quan trọng trong Axum?
-
-1. **Type Safety**: Rust's type system đảm bảo code an toàn tại compile time
-2. **Code Reusability**: Generics giúp viết code tái sử dụng cho nhiều kiểu dữ liệu
-3. **Abstraction**: Traits cho phép abstract hóa behavior mà không cần biết concrete type
-4. **Performance**: Zero-cost abstractions - không có overhead runtime
-5. **Axum's Design**: Toàn bộ Axum được xây dựng trên traits và generics
-
-## Lời khuyên khi học Axum
-
-1. **Bắt đầu với basic traits**: `Clone`, `Debug`, `Serialize`, `Deserialize`
-2. **Hiểu Handler trait**: Cách Axum biến functions thành handlers
-3. **Thực hành với Extractors**: `Json<T>`, `Query<T>`, `Path<T>`
-4. **Dùng `where` clauses**: Giúp code dễ đọc hơn khi có nhiều trait bounds
-5. **Tìm hiểu về lifetime parameters**: Quan trọng khi làm việc với references
-
 ---
